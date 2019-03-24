@@ -1,6 +1,6 @@
 
 # Base packages to scan Dubbo Component: @org.apache.dubbo.config.annotation.Service
-dubbo.scan.base-packages: com.haigeek.dubbo.provider.service
+dubbo.scan.base-packages: com.haigeek.dubbo.providerb.service
 
 
 
@@ -14,7 +14,7 @@ dubbo.protocol.port: -1
 ## dubbo.application.name=${spring.application.name}
 spring:
   application:
-    name: dubbo-provider-sample
+    name: dubbo-provider-sample-b
 
 demo:
   service:
@@ -23,7 +23,6 @@ demo:
 dubbo:
   registry:
     address: zookeeper://127.0.0.1:2181
-  consumer:
-    version: 1.0.0
+
 server:
-  port: 8081
+  port: 8082

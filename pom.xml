@@ -4,12 +4,15 @@
 
     <groupId>com.haigeek</groupId>
         <artifactId>dubbo-spring-boot-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
         <module>dubbo-consumer</module>
         <module>dubbo-provider</module>
+        <module>dubbo-provider-b</module>
+        <module>dubbo-providerb-api</module>
     </modules>
 
     <properties>

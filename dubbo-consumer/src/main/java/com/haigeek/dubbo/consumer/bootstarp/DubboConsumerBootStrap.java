@@ -31,6 +31,7 @@ public class DubboConsumerBootStrap {
     public ApplicationRunner runner() {
         return args -> {
             logger.info(demoService.sayHello("this is springboot+dubbo"));
+            logger.info(demoService.sayHelloB("this is springboot+dubbo"));
         };
     }
 }

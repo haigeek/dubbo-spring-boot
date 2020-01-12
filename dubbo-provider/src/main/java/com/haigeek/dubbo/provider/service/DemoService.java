@@ -8,6 +8,5 @@ public interface DemoService {
 
     String sayHello(String name);
 
-    String sayHelloB(String name);
 
 }

@@ -9,8 +9,9 @@ demo:
 
 dubbo:
   registry:
-    address: zookeeper://127.0.0.1:2181
+    address: nacos://127.0.0.1:8848 #zookeeper://127.0.0.1:2181
 
 server:
   port: 8080
-  servlet-path: /consumer
+  servlet:
+    context-path: /consumer

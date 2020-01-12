@@ -3,7 +3,6 @@ package com.haigeek.dubbo.provider.service;
 import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
-import service.DemoServiceB;
 
 /**
  * @author zhaohj
@@ -12,17 +11,11 @@ import service.DemoServiceB;
 @Service(version = "${demo.service.version}")
 public class DemoServiceImpl implements DemoService{
 
-    @Reference
-    DemoServiceB demoServiceB;
 
     @Value("${dubbo.application.name}")
     private String serviceName;
 
     public String sayHello(String name) {
         return String.format("[%s] : Hello, %s", serviceName, name);
-    }
-
-    public String sayHelloB(String name) {
-        return demoServiceB.sayHelloB(name);
     }
 }

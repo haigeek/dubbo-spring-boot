@@ -1,5 +1,7 @@
 package com.haigeek.dubbo.consumer.bootstarp;
 
+
+
 import com.haigeek.dubbo.provider.service.DemoService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
@@ -24,14 +26,13 @@ public class DubboConsumerBootStrap {
     private DemoService demoService;
 
     public static void main(String[] args) {
-        SpringApplication.run(DubboConsumerBootStrap.class,args).close();
+        SpringApplication.run(DubboConsumerBootStrap.class,args);
     }
 
     @Bean
     public ApplicationRunner runner() {
         return args -> {
             logger.info(demoService.sayHello("this is springboot+dubbo"));
-            logger.info(demoService.sayHelloB("this is springboot+dubbo"));
         };
     }
 }

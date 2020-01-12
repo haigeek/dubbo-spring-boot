@@ -22,7 +22,7 @@
         <java.version>1.8</java.version>
         <mavne.surefire.plugin.version>2.19.1</mavne.surefire.plugin.version>
         <lombok.version>1.16.18</lombok.version>
-        <fastjson.version>1.2.4</fastjson.version>
+        <fastjson.version>1.2.25</fastjson.version>
         <dozer.version>5.4.0</dozer.version>
         <nacos.version> 1.1.3 </nacos.version>
         <registry-nacos.version>0.0.2</registry-nacos.version>

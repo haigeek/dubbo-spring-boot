@@ -15,7 +15,7 @@
     </modules>
 
     <properties>
-        <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
         <dubbo.version>2.7.3</dubbo.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
